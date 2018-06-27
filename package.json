@@ -1,0 +1,24 @@
+{
+  "name": "simple-node-typescript-seed",
+  "version": "1.0.0",
+  "description": "A very simple Node.js TypeScript project seed",
+  "main": "dist/index.js",
+  "author": "Michael de Wit <mjwwit@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon -e ts --watch src --exec 'ts-node src/index.ts'",
+    "lint": "tslint -p tsconfig.json --format stylish",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@types/node": "^10.3.6"
+  }
+}
